@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json例子</title>
+    <script>
+        //定义我们的json对象
+        var jsonObject = {name: "mayikt", age: 22, isFlag: true}
+        alert(jsonObject.name);
+        alert(jsonObject.age);
+        alert(jsonObject.isFlag);
+        //2.json数组
+        var jsonArr = [{name: "mayikt1", age: 22, isFlag: true}, {
+            name: "mayikt2",
+            age: 22,
+            isFlag: true
+        }, {name: "mayikt3", age: 22, isFlag: true}]
+        for (var i = 0; i < jsonArr.length; i++) {
+            alert(jsonArr[i].name)
+        }
+        //3.json嵌套数组
+        var jsonObject2 = {
+            code: 200,
+            msg: "ok",
+            data: [{name: "mayikt4", age: 22, isFlag: true},{name: "mayikt5", age: 22, isFlag: true}]
+        };
+        var jsonDate = jsonObject2.data;
+        alert(jsonDate[0].name)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

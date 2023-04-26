@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [07/Dec/2022:08:48:01 +0800] "GET /mayiktJsp HTTP/1.1" 200 6 http-bio-85-exec-2 98
+0:0:0:0:0:0:0:1 - - [07/Dec/2022:08:48:04 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-85-exec-3 17
+0:0:0:0:0:0:0:1 - - [07/Dec/2022:08:49:55 +0800] "GET /mayiktJsp HTTP/1.1" 200 6 http-bio-85-exec-1 85
+0:0:0:0:0:0:0:1 - - [07/Dec/2022:08:53:04 +0800] "GET /mayiktJsp HTTP/1.1" 200 102 http-bio-85-exec-1 821

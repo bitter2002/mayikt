@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace-->
+<mapper namespace="com.mayikt.mapper.UserMapper">
+    <!--在同一个namespace id是不允许重-->
+    <select id="getByUsers" resultType="com.mayikt.entity.UserEntity">
+        select * from mayikt_users
+    </select>
+</mapper>

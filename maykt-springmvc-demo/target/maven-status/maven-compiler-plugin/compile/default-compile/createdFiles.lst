@@ -1,0 +1,7 @@
+com\mayikt\config\ServletInitialize.class
+com\mayikt\config\SpringMVCConfig.class
+com\mayikt\controller\MayiktJspController.class
+com\mayikt\controller\MayiktUserRestfulController.class
+com\mayikt\entity\MayiktUserInfoEntity.class
+com\mayikt\controller\MayiktController.class
+com\mayikt\controller\MayiktRestController.class

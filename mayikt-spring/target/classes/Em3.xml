@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--注入员工对象-->
+    <!-- 使用到bean标签中autowire
+       1.byName 根据属性的名称自动装配 属性的名称要和bean的id一致
+       2.byType 根据属性类型自动装配合 不能配置对个部分对象,不然不知道装配哪一个
+       -->
+    <bean id="emEntity" class="com.mayikt.entity.EmEntity" autowire="byType">
+
+    </bean>
+    <!--  注入部门对象  -->
+    <bean id="deptEntity" class="com.mayikt.entity.DeptEntity">
+        <property name="name" value="教育部门"></property>
+    </bean>
+</beans>

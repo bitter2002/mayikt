@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Google/libs/libs/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Google/libs/libs/mchange-commons-java-0.2.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Google/libs/libs/mysql-connector-java-8.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Google/druid-1.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

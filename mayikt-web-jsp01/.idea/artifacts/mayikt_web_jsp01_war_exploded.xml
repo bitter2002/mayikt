@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mayikt-web-jsp01:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mayikt_web_jsp01_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="mayikt-web-jsp01/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mayikt-web-jsp01" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

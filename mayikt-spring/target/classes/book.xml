@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- set方法注入属性值   -->
+    <!--    <bean id="bookEntity" class="com.mayikt.entity.BookEntity">-->
+    <!--        <property name="bookName" value="鸡你太美"></property>-->
+    <!--        <property name="bookPrice" value="90.00"></property>-->
+    <!--    </bean>-->
+
+    <!-- p标签方式注入属性值,实际上还是走set方法 -->
+    <!--    <bean id="book" class="com.mayikt.entity.BookEntity" p:bookName="假如给我三天光明" p:bookPrice="88.88"></bean>-->
+
+    <!-- 给我们属性注入空值   -->
+    <bean id="bookEntity" class="com.mayikt.entity.BookEntity">
+        <property name="bookName">
+            <null></null>
+        </property>
+        <property name="bookPrice" value="90.00"></property>
+    </bean>
+
+    <!--在这个时候无法注入特殊符号给我们bean的属性值
+    1.转移特殊字符
+    2.cdata
+        -->
+    <bean id="bookEntity2" class="com.mayikt.entity.BookEntity">
+<!--        <property name="bookName" value="<<武汉>>"></property>-->
+        <property name="bookName" value="&lt;&lt;武汉&gt;&gt;"></property>
+        <property name="bookPrice" value="90.00"></property>
+    </bean>
+
+    <bean id="bookEntity3" class="com.mayikt.entity.BookEntity">
+        <!--    <property name="bookName" value="<<武汉>>"></property> -->
+        <property name="bookName">
+            <value><![CDATA[<<武汉>>]]></value>
+        </property>
+        <property name="bookPrice">
+            <null></null>
+        </property>
+    </bean>
+</beans>

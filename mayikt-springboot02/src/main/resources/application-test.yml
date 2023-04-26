@@ -1,0 +1,6 @@
+#application-dev.yml：开发环境配置文件
+#application-test.yml：测试环境配置文件
+#application-prd.yml：生产环境配置文件
+luo:
+  name: test.luoyaozhong
+  age: test.20

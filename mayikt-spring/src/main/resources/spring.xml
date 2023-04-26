@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置注入spring bean对象
+    bean的id是不允许重复的,命名格式一般是类名称首字母小写
+    class 类的完整路径地址
+    -->
+    <bean id="userEntity" class="com.mayikt.entity.UserEntity"></bean>
+</beans>

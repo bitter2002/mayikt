@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--级联赋值的形式-->
+    <bean id="emEntity" class="com.mayikt.entity.EmEntity">
+        <!--    两个属性    -->
+        <property name="name" value="罗尧中"></property>
+        <property name="address" value="江西吉安市"></property>
+        <property name="deptEntity" ref="deptEntity"></property>
+        <property name="deptEntity.name" value="IT部门"></property>
+    </bean>
+    <bean id="deptEntity" class="com.mayikt.entity.DeptEntity">
+<!--        <property name="name" value="教育局"></property>-->
+    </bean>
+</beans>

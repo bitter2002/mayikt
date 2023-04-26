@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--基于有参构造函数初始化对象,通知注入属性值-->
+    <bean id="orderEntity" class="com.mayikt.entity.OrderEntity">
+<!--        <constructor-arg name="orderId" value="001"></constructor-arg>-->
+<!--        <constructor-arg name="orderName" value="刘宇星"></constructor-arg>-->
+
+        <!--第二种写法  index 参数列表索引-->
+        <constructor-arg index="0" value="002"></constructor-arg>
+        <constructor-arg index="1" value="罗尧中"></constructor-arg>
+    </bean>
+</beans>

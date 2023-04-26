@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="stuEntity" class="com.mayikt.entity.StuEntity">
+        <!--        对我们list集合属性赋值-->
+        <property name="list">
+            <list>
+                <value>list01</value>
+                <value>list02</value>
+            </list>
+        </property>
+        <!--        对我们arrays属性赋值-->
+        <property name="arrays">
+            <array>
+                <value>array01</value>
+                <value>array02</value>
+            </array>
+        </property>
+        <!--        对map属性赋值-->
+        <property name="map">
+            <map>
+                <entry key="001" value="罗尧中"></entry>
+                <entry key="002" value="刘宇星"></entry>
+            </map>
+        </property>
+        <!--        对我们set属性赋值-->
+        <property name="set">
+            <set>
+                <value>set01</value>
+                <value>set02</value>
+            </set>
+        </property>
+        <!--   注入list类型对象ref bean引入对象即可     -->
+        <property name="courseEntityList">
+            <list>
+                <ref bean="courseEntity_java"></ref>
+                <ref bean="courseEntity_c++"></ref>
+            </list>
+        </property>
+    </bean>
+    <!--   java课程 -->
+    <bean id="courseEntity_java" class="com.mayikt.entity.CourseEntity">
+        <property name="name" value="mayikt-java"></property>
+    </bean>
+    <!--    c++课程-->
+    <bean id="courseEntity_c++" class="com.mayikt.entity.CourseEntity">
+        <property name="name" value="mayikt-c++"></property>
+    </bean>
+</beans>
